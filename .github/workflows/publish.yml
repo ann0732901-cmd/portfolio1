@@ -1,29 +1,28 @@
 name: Publish portfolio
 
 on:
-  push:
-    paths:
-      - portfolio1-site.zip.aa
-      - portfolio1-site.zip.ab
-      - portfolio1-site.zip.ac
-      - portfolio1-site.zip.ad
+  release:
+    types: [published]
 
 permissions:
   contents: write
 
 jobs:
-  unpack:
-    if: hashFiles('portfolio1-site.zip.aa') != '' && hashFiles('portfolio1-site.zip.ab') != '' && hashFiles('portfolio1-site.zip.ac') != '' && hashFiles('portfolio1-site.zip.ad') != ''
+  publish:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Rebuild and extract website
+      - name: Download release website archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release download "${{ github.event.release.tag_name }}" --pattern "portfolio1-site.zip" --dir .
+
+      - name: Extract and clean archive
         run: |
-          cat portfolio1-site.zip.* > portfolio1-site.zip
           unzip -oq portfolio1-site.zip -d .
-          rm portfolio1-site.zip portfolio1-site.zip.*
+          rm portfolio1-site.zip
 
       - name: Commit published files
         run: |
