@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="刘帅（Ann）个人设计作品集。8 年品牌与电商视觉经验，专注食品、饮料与酒水行业。"
+    />
+    <meta name="theme-color" content="#f7f6f2" />
+    <title>刘帅 Ann — Personal Design Portfolio</title>
+    <link rel="icon" href="assets/brand/ann-mark.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <svg class="hero-filter-defs" aria-hidden="true" width="0" height="0">
+      <defs>
+        <filter id="hero-liquid" x="-15%" y="-15%" width="130%" height="130%">
+          <feTurbulence
+            type="fractalNoise"
+            baseFrequency="0.008 0.015"
+            numOctaves="2"
+            seed="11"
+            result="noise"
+          >
+            <animate
+              attributeName="baseFrequency"
+              values="0.008 0.015;0.012 0.009;0.007 0.013;0.008 0.015"
+              dur="9s"
+              repeatCount="indefinite"
+            />
+          </feTurbulence>
+          <feDisplacementMap
+            in="SourceGraphic"
+            in2="noise"
+            scale="15"
+            xChannelSelector="R"
+            yChannelSelector="B"
+          />
+        </filter>
+      </defs>
+    </svg>
+
+    <header class="site-header" data-header>
+      <a class="nav-pill" href="#top" aria-label="回到首页">
+        <span class="nav-mark">
+          <img src="assets/brand/ann-mark.png" alt="" />
+        </span>
+        <span class="nav-name">
+          <strong>Ann.</strong>
+          <small>Visual Designer</small>
+        </span>
+        <span class="menu-lines" aria-hidden="true">
+          <i></i>
+          <i></i>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="主要导航">
+        <a href="#work">Work</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="header-cta" href="#contact">
+        <span>Let’s talk</span>
+        <span aria-hidden="true">↗</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="打开导航菜单"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        data-menu-toggle
+      >
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true" data-mobile-menu>
+      <nav aria-label="移动端导航">
+        <a href="#work"><span>01</span>Selected Work</a>
+        <a href="#faq"><span>02</span>Questions</a>
+        <a href="#contact"><span>03</span>Contact</a>
+      </nav>
+      <div class="mobile-menu-meta">
+        <a href="tel:13524280166">135 2428 0166</a>
+        <a href="mailto:ann921526277@163.com">ann921526277@163.com</a>
+        <span>Shanghai · China</span>
+      </div>
+    </div>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="contact-ribbon" aria-label="联系方式">
+          <span>Tel:13524280166</span>
+          <span class="contact-divider">/</span>
+          <span>Mail:ann921526277@163.com</span>
+        </div>
+
+        <div class="hero-gallery" data-hero-gallery aria-hidden="true">
+          <div class="hero-burst" aria-hidden="true"></div>
+          <figure class="hero-tile" style="--x: -2.2vw; --y: 1.5vh; --w: 4.5vw; --h: 6vh; --r: -4deg; --delay: 0.12s">
+            <div class="hero-tile-frame"><img src="assets/hero-library/47.jpg" alt="" /></div>
+          </figure>
+          <figure class="hero-tile" style="--x: -7.5vw; --y: 1vh; --w: 6.5vw; --h: 10vh; --r: -4deg; --delay: 0.2s">
+            <div class="hero-tile-frame"><img src="assets/hero-library/44.jpg" alt="" /></div>
+          </figure>
+          <figure class="hero-tile" style="--x: -14vw; --y: 0; --w: 8vw; --h: 18vh; --r: -5deg; --delay: 0.28s">
+            <div class="hero-tile-frame"><img src="assets/hero-library/23.jpg" alt="" /></div>
+          </figure>
+          <figure class="hero-tile" style="--x: -21.5vw; --y: -2vh; --w: 9.5vw; --h: 29vh; --r: -5deg; --delay: 0.36s">
+            <div class="hero-tile-frame"><img src="assets/hero-library/39.jpg" alt="" /></div>
+          </figure>
+          <figure class="hero-tile" style="--x: -29vw; --y: -4vh; --w: 10.5vw; --h: 41vh; --r: -4deg; --delay: 0.44s">
+            <div class="hero-tile-frame"><img src="assets/hero-library/9.jpg" alt="" /></div>
+          </figure>
+          <figure class="hero-tile" style="--x: -36.5vw; --y: -6vh; --w: 11vw; --h: 53vh; --r: -3deg; --delay: 0.52s">
+            <div class="hero-tile-frame"><img src="assets/hero-library/31.jpg" alt="" /></div>
+          </figure>
+          <figure class="hero-tile" style="--x: -44vw; --y: -8vh; --w: 11.5vw; --h: 63vh; --r: -2deg; --delay: 0.6s">
+            <div class="hero-tile-frame"><img src="assets/hero-library/11.jpg" alt="" /></div>
+          </figure>
+          <figure class="hero-tile" style="--x: -51.5vw; --y: -10vh; --w: 12vw; --h: 72vh; --r: -1deg; --delay: 0.68s">
+            <div class="hero-tile-frame"><img src="assets/hero-library/5.jpg" alt="" /></div>
+          </figure>
+          <figure class="hero-tile" style="--x: -59vw; --y: -11vh; --w: 12.5vw; --h: 80vh; --r: 0deg; --delay: 0.76s">
+            <div class="hero-tile-frame"><img src="assets/hero-library/48.jpg" alt="" /></div>
+          </figure>
+          <figure class="hero-tile" style="--x: 2.2vw; --y: 1.5vh; --w: 4.5vw; --h: 6vh; --r: 4deg; --delay: 0.12s">
+            <div class="hero-tile-frame"><img src="assets/hero-library/50.jpg" alt="" /></div>
+          </figure>
+          <figure class="hero-tile" style="--x: 7.5vw; --y: 1vh; --w: 6.5vw; --h: 10vh; --r: 4deg; --delay: 0.2s">
+            <div class="hero-tile-frame"><img src="assets/hero-library/41.jpg" alt="" /></div>
+          </figure>
+          <figure class="hero-tile" style="--x: 14vw; --y: 0; --w: 8vw; --h: 18vh; --r: 5deg; --delay: 0.28s">
+            <div class="hero-tile-frame"><img src="assets/hero-library/28.jpg" alt="" /></div>
+          </figure>
+          <figure class="hero-tile" style="--x: 21.5vw; --y: -2vh; --w: 9.5vw; --h: 29vh; --r: 5deg; --delay: 0.36s">
+            <div class="hero-tile-frame"><img src="assets/hero-library/36.jpg" alt="" /></div>
+          </figure>
+          <figure class="hero-tile" style="--x: 29vw; --y: -4vh; --w: 10.5vw; --h: 41vh; --r: 4deg; --delay: 0.44s">
+            <div class="hero-tile-frame"><img src="assets/hero-library/16.jpg" alt="" /></div>
+          </figure>
+          <figure class="hero-tile" style="--x: 36.5vw; --y: -6vh; --w: 11vw; --h: 53vh; --r: 3deg; --delay: 0.52s">
+            <div class="hero-tile-frame"><img src="assets/hero-library/20.jpg" alt="" /></div>
+          </figure>
+          <figure class="hero-tile" style="--x: 44vw; --y: -8vh; --w: 11.5vw; --h: 63vh; --r: 2deg; --delay: 0.6s">
+            <div class="hero-tile-frame"><img src="assets/hero-library/10.jpg" alt="" /></div>
+          </figure>
+          <figure class="hero-tile" style="--x: 51.5vw; --y: -10vh; --w: 12vw; --h: 72vh; --r: 1deg; --delay: 0.68s">
+            <div class="hero-tile-frame"><img src="assets/hero-library/17.jpg" alt="" /></div>
+          </figure>
+          <figure class="hero-tile" style="--x: 59vw; --y: -11vh; --w: 12.5vw; --h: 80vh; --r: 0deg; --delay: 0.76s">
+            <div class="hero-tile-frame"><img src="assets/hero-library/42.jpg" alt="" /></div>
+          </figure>
+        </div>
+
+        <div class="hero-copy">
+          <div class="hero-title-block">
+            <p class="eyebrow">PORTFOLIO / 2026</p>
+            <h1 id="hero-title">
+              <span class="title-script">LiuShuai</span>
+              <span>Personal Design</span>
+              <span>Portfolio</span>
+            </h1>
+          </div>
+
+          <div class="hero-bio">
+            <p class="bio-lead">刘帅（Ann）视觉设计师｜电商设计主管｜视觉传达设计专业</p>
+            <p>
+              拥有 8 年电商设计经验，其中 5 年专注食品、饮料与酒水行业，3 年电商设计团队管理经验。
+            </p>
+            <p>
+              能够独立完成从创意概念到设计落地的全流程，也能搭建 AI 辅助设计工作流。
+            </p>
+            <p>
+              擅长品牌官旗店、节点大促、新品上市、社交媒体、产品内容与品牌画册设计。
+            </p>
+          </div>
+        </div>
+
+        <a class="scroll-cue" href="#clients">
+          <span>SCROLL TO EXPLORE</span>
+          <i aria-hidden="true"></i>
+        </a>
+      </section>
+
+      <section class="clients" id="clients" aria-labelledby="clients-title">
+        <div class="clients-shell">
+          <div class="section-heading">
+            <p class="eyebrow">TRUSTED BY / 2019—NOW</p>
+            <h2 id="clients-title">
+              在真实业务里，<br />
+              做有效的<span class="accent-word">设计。</span>
+            </h2>
+            <p class="section-intro">
+              近 5 年服务食品、饮料与酒水行业头部品牌，也持续参与母婴、餐饮与服饰领域的品牌视觉项目。
+            </p>
+          </div>
+
+          <div class="logo-grid" aria-label="服务品牌">
+            <div class="logo-tile">
+              <img src="assets/logos/罗曼湖威士忌.png" alt="罗曼湖威士忌" />
+            </div>
+            <div class="logo-tile">
+              <img src="assets/logos/莫士厨房.png" alt="莫士厨房" />
+            </div>
+            <div class="logo-tile">
+              <img src="assets/logos/莫小仙.png" alt="莫小仙" />
+            </div>
+            <div class="logo-tile logo-tile-dark">
+              <img src="assets/logos/争鲜寿司.png" alt="争鲜寿司" />
+            </div>
+            <div class="logo-tile">
+              <img src="assets/logos/爱他美.png" alt="爱他美" />
+            </div>
+            <div class="logo-tile">
+              <img src="assets/logos/ZARA.png" alt="ZARA" />
+            </div>
+            <div class="logo-tile">
+              <img src="assets/logos/格兰帝威士忌.png" alt="格兰帝威士忌" />
+            </div>
+            <div class="logo-tile">
+              <img src="assets/logos/小磨坊威士忌.png" alt="小磨坊威士忌" />
+            </div>
+            <div class="logo-tile">
+              <img src="assets/logos/喂自由.png" alt="喂自由" />
+            </div>
+            <div class="logo-tile">
+              <img src="assets/logos/誉诚.png" alt="誉诚" />
+            </div>
+          </div>
+
+          <div class="clients-foot">
+            <span>BRAND / E-COMMERCE / CAMPAIGN / CONTENT</span>
+            <span>SHANGHAI · CN</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="work" id="work" aria-labelledby="work-title">
+        <div class="work-intro" data-reveal>
+          <p class="eyebrow eyebrow-light">SELECTED WORK / 2020—2026</p>
+          <div class="work-title-row">
+            <h2 id="work-title">Selected <em>Work</em></h2>
+            <p>
+              从品牌官旗店、节点大促到新品上市与内容体系，
+              每个项目都从业务目标出发，完成从概念到上线的视觉闭环。
+            </p>
+          </div>
+        </div>
+
+        <div class="project-list">
+          <article class="project" data-reveal>
+            <div class="project-media project-media-romand">
+              <img
+                src="assets/projects/romand-lake-bg.jpg?v=20261111"
+                alt="罗曼湖威士忌品鉴场景"
+                loading="lazy"
+              />
+              <div class="project-media-top">
+                <span>01 / 06</span>
+                <span>WHISKY</span>
+              </div>
+              <div class="project-media-copy">
+                <span>LOCH LOMOND</span>
+                <h3>罗曼湖</h3>
+                <p>高端威士忌品牌视觉</p>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <figure class="project-art">
+                <img
+                  src="assets/projects-updated/romand-lake.jpg"
+                  alt="罗曼湖会员俱乐部、产品详情与品鉴主题视觉作品"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="project-info">
+                <div>
+                  <p class="project-kicker">E-COMMERCE / BRAND CONTENT</p>
+                  <h3>罗曼湖 · 高端威士忌</h3>
+                  <p>
+                    以深木色、原产地与苏格兰文化叙事建立高端感，覆盖会员视觉、产品详情与节点内容。
+                  </p>
+                </div>
+                <ul class="project-tags" aria-label="项目内容">
+                  <li>品牌官旗</li>
+                  <li>会员视觉</li>
+                  <li>产品详情</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-reveal>
+            <div class="project-media project-media-moshi">
+              <img
+                src="assets/projects/moshi-kitchen-bg.jpg"
+                alt="莫士厨房糙米饭产品场景"
+                loading="lazy"
+              />
+              <div class="project-media-top">
+                <span>02 / 06</span>
+                <span>HEALTHY FOOD</span>
+              </div>
+              <div class="project-media-copy">
+                <span>MO’S KITCHEN</span>
+                <h3>莫士厨房</h3>
+                <p>高端健康速食</p>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <figure class="project-art">
+                <img
+                  src="assets/projects-updated/moshi-kitchen.jpg"
+                  alt="莫士厨房产品卖点、详情页与内容设计"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="project-info">
+                <div>
+                  <p class="project-kicker">PRODUCT STORY / VISUAL SYSTEM</p>
+                  <h3>莫士厨房 · 健康速食</h3>
+                  <p>
+                    用温暖生活方式摄影承接食物质感，把膳食纤维、低负担与便捷食用等卖点转译为清晰的信息层级。
+                  </p>
+                </div>
+                <ul class="project-tags" aria-label="项目内容">
+                  <li>产品内容</li>
+                  <li>卖点可视化</li>
+                  <li>详情设计</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-reveal>
+            <div class="project-media project-media-moxiaoxian">
+              <img
+                src="assets/projects/moxiaoxian-bg.jpg"
+                alt="莫小仙自热食品产品组合"
+                loading="lazy"
+              />
+              <div class="project-media-top">
+                <span>03 / 06</span>
+                <span>FMCG / CAMPAIGN</span>
+              </div>
+              <div class="project-media-copy">
+                <span>MǑ XIAO XIAN</span>
+                <h3>莫小仙</h3>
+                <p>潮流速食 · 平价快消</p>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <figure class="project-art">
+                <img
+                  src="assets/projects-updated/moxiaoxian.jpg"
+                  alt="莫小仙新品、详情页与电商活动视觉"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="project-info">
+                <div>
+                  <p class="project-kicker">CAMPAIGN / FLAGSHIP STORE</p>
+                  <h3>莫小仙 · 潮流速食</h3>
+                  <p>
+                    连续负责全年大促与新品视觉，覆盖主视觉、首页、活动页与产品内容，支持品牌取得天猫自热食品品类销售第一。
+                  </p>
+                </div>
+                <ul class="project-tags" aria-label="项目内容">
+                  <li>大促主视觉</li>
+                  <li>品牌官旗</li>
+                  <li>新品视觉</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-reveal>
+            <div class="project-media project-media-zhengxian">
+              <img
+                src="assets/projects/zhengxian-sushi-bg.jpg"
+                alt="争鲜寿司产品摄影"
+                loading="lazy"
+              />
+              <div class="project-media-top">
+                <span>04 / 06</span>
+                <span>FOOD / SOCIAL</span>
+              </div>
+              <div class="project-media-copy">
+                <span>SUSHI EXPRESS</span>
+                <h3>争鲜寿司</h3>
+                <p>平价快消 · 餐饮内容</p>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <figure class="project-art">
+                <img
+                  src="assets/projects-updated/zhengxian-sushi.jpg"
+                  alt="争鲜寿司节点营销、会员活动与单品推广视觉"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="project-info">
+                <div>
+                  <p class="project-kicker">SOCIAL / RETAIL CAMPAIGN</p>
+                  <h3>争鲜寿司 · 餐饮快消</h3>
+                  <p>
+                    以高明度色彩、强食欲图片与直接利益点提升内容辨识度，适配节点营销、会员活动与单品推广场景。
+                  </p>
+                </div>
+                <ul class="project-tags" aria-label="项目内容">
+                  <li>节点营销</li>
+                  <li>会员活动</li>
+                  <li>单品推广</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-reveal>
+            <div class="project-media project-media-aptamil">
+              <img
+                src="assets/projects/aptamil-bg.jpg"
+                alt="爱他美母婴场景"
+                loading="lazy"
+              />
+              <div class="project-media-top">
+                <span>05 / 06</span>
+                <span>MOTHER &amp; BABY</span>
+              </div>
+              <div class="project-media-copy">
+                <span>APTAMIL</span>
+                <h3>爱他美</h3>
+                <p>高端婴幼儿奶粉</p>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <figure class="project-art">
+                <img
+                  src="assets/projects-updated/aptamil.jpg"
+                  alt="爱他美知识课堂、私域活动与产品内容设计"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="project-info">
+                <div>
+                  <p class="project-kicker">CONTENT SYSTEM / PRIVATE DOMAIN</p>
+                  <h3>爱他美 · 母婴营养</h3>
+                  <p>
+                    面向母婴人群，围绕产品知识、会员沟通与私域活动建立稳定的内容体系，兼顾专业信息与品牌温度。
+                  </p>
+                </div>
+                <ul class="project-tags" aria-label="项目内容">
+                  <li>知识课堂</li>
+                  <li>私域内容</li>
+                  <li>新媒体视觉</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-reveal>
+            <div class="project-media project-media-zara">
+              <img
+                src="assets/projects/zara-bg.jpg"
+                alt="ZARA 当季服装视觉"
+                loading="lazy"
+              />
+              <div class="project-media-top">
+                <span>06 / 06</span>
+                <span>FASHION / RETAIL</span>
+              </div>
+              <div class="project-media-copy">
+                <span>ZARA</span>
+                <h3>ZARA</h3>
+                <p>快消时尚 · 本地传播</p>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <figure class="project-art project-art-zara">
+                <img
+                  src="assets/projects-updated/zara.jpg"
+                  alt="ZARA 广州门店当季新品与新媒体视觉"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="project-info">
+                <div>
+                  <p class="project-kicker">LOCAL SOCIAL / FASHION</p>
+                  <h3>ZARA · 广州门店</h3>
+                  <p>
+                    在保持全球品牌极简调性的同时，适配广州门店本地传播与当季新品预热场景。
+                  </p>
+                </div>
+                <ul class="project-tags" aria-label="项目内容">
+                  <li>新品预热</li>
+                  <li>新媒体宣发</li>
+                  <li>本地传播</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="statement" aria-label="设计理念">
+        <p class="eyebrow" data-reveal>HOW I WORK</p>
+        <blockquote data-reveal>
+          先理解业务，<br />
+          再决定视觉应该<span class="accent-word">说什么。</span>
+        </blockquote>
+        <div class="statement-notes" data-reveal>
+          <p>
+            从业务目标梳理信息层级，统筹团队与跨部门协作，
+            让设计既保持品牌调性，也能服务实际转化。
+          </p>
+          <a href="#faq">了解更多我的工作方式 <span aria-hidden="true">↘</span></a>
+        </div>
+      </section>
+
+      <section class="faq" id="faq" aria-labelledby="faq-title">
+        <div class="faq-layout">
+          <div class="faq-heading">
+            <p class="eyebrow">Q&amp;A / PROFILE</p>
+            <h2 id="faq-title">Questions,<br /><em>answered.</em></h2>
+            <p>
+              一点关于经历、方法与合作方式的说明。
+              如果你正在寻找一位既懂品牌表达，也能把项目推进落地的设计伙伴，可以从这里开始了解。
+            </p>
+            <div class="faq-mark" aria-hidden="true">
+              <img src="assets/brand/ann-mark.png" alt="" />
+            </div>
+          </div>
+
+          <div class="faq-list">
+            <details name="portfolio-faq" open>
+              <summary>
+                <span><small>01</small>你的经验主要集中在哪些行业？</span>
+                <i aria-hidden="true"></i>
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  我有 8 年品牌与电商视觉经验，其中 5 年专注食品、饮料与酒水行业。近几年也持续参与母婴、餐饮与服饰品牌项目，包括爱他美、争鲜寿司与 ZARA 广州门店。
+                </p>
+              </div>
+            </details>
+
+            <details name="portfolio-faq">
+              <summary>
+                <span><small>02</small>从概念到上线，你可以负责哪些环节？</span>
+                <i aria-hidden="true"></i>
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  能覆盖主视觉、品牌官旗店、活动页、产品详情、社交媒体内容、品牌画册与设计规范。可以独立完成从创意概念到设计落地的全流程，也能在复杂项目中协调团队与跨部门资源。
+                </p>
+              </div>
+            </details>
+
+            <details name="portfolio-faq">
+              <summary>
+                <span><small>03</small>你如何平衡品牌调性与销售转化？</span>
+                <i aria-hidden="true"></i>
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  先明确业务目标与用户沟通场景，再梳理信息层级。品牌调性负责建立长期识别，转化设计负责让利益点清楚、购买路径顺畅。两者不是取舍关系，而是同一套视觉系统中的不同任务。
+                </p>
+              </div>
+            </details>
+
+            <details name="portfolio-faq">
+              <summary>
+                <span><small>04</small>作为设计主管，你如何推动团队协作？</span>
+                <i aria-hidden="true"></i>
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  我会先拆解项目目标、优先级与交付节奏，再根据成员能力分配设计延展，并在关键节点统一视觉标准。3 年团队管理经验让我更重视沟通、复盘与项目闭环，而不只是交付一张画面。
+                </p>
+              </div>
+            </details>
+
+            <details name="portfolio-faq">
+              <summary>
+                <span><small>05</small>AI 在你的设计流程里扮演什么角色？</span>
+                <i aria-hidden="true"></i>
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  AI 主要帮助我更快完成概念探索、素材方向验证与视觉延展。我会把 AI 接入辅助设计工作流，但最终的信息判断、品牌一致性、细节把控与上线质量仍由设计负责。
+                </p>
+              </div>
+            </details>
+
+            <details name="portfolio-faq">
+              <summary>
+                <span><small>06</small>你希望参与怎样的项目？</span>
+                <i aria-hidden="true"></i>
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  需要长期品牌建设、复杂电商视觉体系或跨渠道内容落地的项目。尤其期待与重视品牌价值、同时关注真实业务结果的团队合作。
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="contact-top" data-reveal>
+          <p class="eyebrow eyebrow-light">HAVE A PROJECT IN MIND?</p>
+          <h2 id="contact-title">
+            把好想法，<br />
+            做成能落地的<span class="accent-word">设计。</span>
+          </h2>
+        </div>
+
+        <div class="contact-grid" data-reveal>
+          <a href="mailto:ann921526277@163.com" class="contact-link">
+            <span>EMAIL</span>
+            <strong>ann921526277@163.com</strong>
+            <i aria-hidden="true">↗</i>
+          </a>
+          <a href="tel:13524280166" class="contact-link">
+            <span>TEL</span>
+            <strong>135 2428 0166</strong>
+            <i aria-hidden="true">↗</i>
+          </a>
+        </div>
+
+        <footer class="site-footer">
+          <div class="footer-mark">
+            <img src="assets/brand/ann-mark.png" alt="" />
+            <span>LiuShuai / Ann</span>
+          </div>
+          <div class="footer-meta">
+            <span>Visual Designer · Shanghai, CN</span>
+            <span>© 2026 LiuShuai. All rights reserved.</span>
+          </div>
+          <a class="back-to-top" href="#top">BACK TO TOP ↑</a>
+        </footer>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
